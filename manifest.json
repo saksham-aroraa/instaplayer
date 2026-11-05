@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "InstaPlayer",
+  "version": "1.1.0",
+  "description": "Modern seek, playback speed, mute, fullscreen, and picture-in-picture controls for Instagram videos.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.instagram.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
